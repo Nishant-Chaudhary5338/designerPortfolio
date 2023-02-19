@@ -1,5 +1,7 @@
 import { useState } from 'react'
+import { Route, Routes } from 'react-router'
 import HomePage from './components/HomePage'
+import ImageDetail from './components/imageDetail'
 
 
 function App() {
@@ -7,7 +9,11 @@ function App() {
 
   return (
     <div>
-     <HomePage />
+      <Routes>
+        <Route index element={<HomePage />} />
+        <Route path='/image/:id' element={<ImageDetail /> } />
+      </Routes>
+     
       
     </div>
   )

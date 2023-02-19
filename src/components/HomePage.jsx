@@ -13,9 +13,9 @@ const HomePage = () => {
          })
     },[])
     return (
-        <div className=" bg-gray-50">
+        <div className=" bg-cyan-300">
             <div className="p-20">
-                <div className="grid grid-cols-3 gap-4">{displayImages.map((u) => (
+                <div className="grid lg:grid-cols-3 items-stretch sm:grid-cols-2 gap-4">{displayImages.map((u) => (
             <ImageRow image={u} />
         )) }</div>
             </div>
