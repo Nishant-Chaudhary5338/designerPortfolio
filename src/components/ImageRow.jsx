@@ -3,7 +3,7 @@ import React from "react"
 const ImageRow = ({image}) => { 
     return (
         <div className="g">
-            <img className="w-96  border border-gray-100 rounded-xl" src={image.url} alt="" />
+            <img className=" border object-cover items-start border-gray-300 rounded-2xl" src={image.url} alt="" />
     </div>
 )
 }

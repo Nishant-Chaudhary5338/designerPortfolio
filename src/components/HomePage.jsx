@@ -13,9 +13,9 @@ const HomePage = () => {
          })
     },[])
     return (
-        <div className="m-10 ">
-            <div className="mx-auto">
-                <div className="flex flex-wrap space-x-4">{displayImages.map((u) => (
+        <div className=" bg-gray-50">
+            <div className="p-20">
+                <div className="grid grid-cols-3 gap-4">{displayImages.map((u) => (
             <ImageRow image={u} />
         )) }</div>
             </div>
