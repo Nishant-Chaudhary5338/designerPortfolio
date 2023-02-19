@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Route, Routes } from 'react-router'
 import HomePage from './components/HomePage'
-import ImageDetail from './components/imageDetail'
+import ImageDetail from './components/ImageDetail'
 
 
 function App() {
