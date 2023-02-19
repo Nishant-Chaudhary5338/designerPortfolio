@@ -11,7 +11,7 @@ function App() {
     <div>
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path='/image/:id' element={<ImageDetail /> } />
+        <Route path='/image/:index' element={<ImageDetail /> } />
       </Routes>
      
       
