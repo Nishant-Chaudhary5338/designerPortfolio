@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { getImages } from "../api";
+import ImageRow from "./ImageRow";
 
 
 const HomePage = () => {
@@ -12,9 +13,14 @@ const HomePage = () => {
          })
     },[])
     return (
-        <div>{displayImages.map((u) => (
-            <div>{u.url }</div>
+        <div className="m-10 ">
+            <div className="mx-auto">
+                <div className="flex flex-wrap space-x-4">{displayImages.map((u) => (
+            <ImageRow image={u} />
         )) }</div>
+            </div>
+            
+        </div>
     )
 };
 
