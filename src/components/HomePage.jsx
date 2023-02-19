@@ -15,7 +15,7 @@ const HomePage = () => {
     return (
         <div className="">
             <div className="sm:p-20 p-4">
-                <div className="grid h-auto lg:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-4">{displayImages.map((u) => (
+                <div className="columns-2 sm:columns-3 md:columns-4 lg:columns-5 xl:columns-6 space-y-4 flex-wrap gap-4">{displayImages.map((u) => (
             <ImageRow image={u} />
         )) }</div>
             </div>

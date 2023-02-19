@@ -8,7 +8,7 @@ const ImageRow = ({ image, index }) => {
     }
     return (
         <div onClick={handleClick} className="">
-            <img className=" border border-gray-300 rounded-2xl" src={image.url} alt="" />
+            <img className=" border overflow-hidden border-gray-300 rounded-2xl" src={image.url} alt="" />
     </div>
 )
 }
