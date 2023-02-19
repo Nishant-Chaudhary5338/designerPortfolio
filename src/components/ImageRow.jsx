@@ -1,9 +1,11 @@
 import React from "react"
+import { useNavigate } from "react-router";
 
-const ImageRow = ({image}) => { 
+const ImageRow = ({ image }) => { 
+    const navigate = useNavigate();
     return (
-        <div className="g">
-            <img className=" border object-cover items-start border-gray-300 rounded-2xl" src={image.url} alt="" />
+        <div onClick={()=>navigate("/image/" + image.id)} className="">
+            <img className=" border object-contain items-start border-gray-300 rounded-2xl" src={image.url} alt="" />
     </div>
 )
 }
